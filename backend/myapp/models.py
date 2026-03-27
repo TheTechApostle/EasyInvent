@@ -2,6 +2,7 @@ from django.db import models, transaction
 import uuid
 from django.conf import settings
 from django.utils import timezone
+from django.contrib.auth.models import User
 # Create your models here.
 
 
@@ -26,3 +27,12 @@ class Organization(models.Model):
     
     def __str__(self):
         return f'{self.name}'
+
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organization, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.user.username} ({self.organization.name})"

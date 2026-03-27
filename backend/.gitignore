@@ -1,0 +1,17 @@
+# create .gitignore file in your project root
+touch .gitignore
+```
+
+Add this inside it:
+```
+# .gitignore
+venv/
+__pycache__/
+*.pyc
+*.pyo
+db.sqlite3
+.env
+*.sqlite3
+media/
+staticfiles/
+.DS_Store
