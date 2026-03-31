@@ -19,13 +19,15 @@ A robust Django REST API boilerplate featuring JWT Authentication, CORS support,
 ```
 
 # Activate Environment
-```
-### Windows:
-- cd venv\Scripts\activate
-- then do `activate.bat`  
- - python manage.py startapp myapp
 
+### Windows:
+```
+    - cd venv\Scripts\activate
+    - then do `activate.bat`  
+    - python manage.py startapp myapp
+```
 # Mac/Linux:
+```
 source venv/bin/activate
 ```
 
