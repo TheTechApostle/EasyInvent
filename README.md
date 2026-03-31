@@ -15,16 +15,17 @@ backend/
 
 
 ## 2. Create directory and virtual environment
-mkdir backend
-cd backend
-python -m venv venv
-
-# Activate Environment
+``` mkdir backend
+- cd backend
+- python -m venv venv
+```
+## 3. Activate Environment
 # Windows:
-cd venv\Scripts\activate
+``` cd venv\Scripts\activate
 - then do `activate.bat`  
 # Mac/Linux:
 source venv/bin/activate
+```
 
 # Install Dependencies
 pip install django djangorestframework django-jazzmin django-cors-headers djangorestframework-simplejwt
