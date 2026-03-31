@@ -11,9 +11,10 @@ backend/
 │   └── urls.py
 ├── myapp/
 └── venv/
+```
 
 
-# Create directory and virtual environment
+## 2. Create directory and virtual environment
 mkdir backend
 cd backend
 python -m venv venv
