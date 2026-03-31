@@ -2,6 +2,21 @@
 
 A robust Django REST API boilerplate featuring JWT Authentication, CORS support, and the Jazzmin admin dashboard.
 
+# Create Repository
+``` - mkdir  easyinvent
+    - cd easyinvent
+
+```
+# Start Project and App
+```
+ - django-admin startproject backend
+ - cd backend
+ - python manage.py startapp myapp
+ 
+```
+# Install Dependencies
+`pip install django djangorestframework django-jazzmin django-cors-headers djangorestframework-simplejwt`
+
 ## 1. Directory Structure
 ```text
 backend/
@@ -28,11 +43,8 @@ backend/
 source venv/bin/activate
 ```
 
-# Install Dependencies
-`pip install django djangorestframework django-jazzmin django-cors-headers djangorestframework-simplejwt`
 
 
 
-# Start Project and App
-django-admin startproject myproject .
-python manage.py startapp myapp
+
+
