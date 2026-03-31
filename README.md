@@ -11,13 +11,30 @@ A robust Django REST API boilerplate featuring JWT Authentication, CORS support,
 ```
  - django-admin startproject backend
  - cd backend
- - python manage.py startapp myapp
- 
 ```
+
+##. Create virtual environment
+```
+- python -m venv venv
+```
+
+##. Activate Environment
+```
+# Windows:
+- cd venv\Scripts\activate
+- then do `activate.bat`  
+ - python manage.py startapp myapp
+
+# Mac/Linux:
+source venv/bin/activate
+```
+
 # Install Dependencies
 `pip install django djangorestframework django-jazzmin django-cors-headers djangorestframework-simplejwt`
 
-## 1. Directory Structure
+
+
+## . Directory Structure
 ```text
 backend/
 ├── manage.py
@@ -29,19 +46,7 @@ backend/
 ```
 
 
-## 2. Create directory and virtual environment
-``` mkdir backend
-- cd backend
-- python -m venv venv
-```
-## 3. Activate Environment
-```
-# Windows:
-- cd venv\Scripts\activate
-- then do `activate.bat`  
-# Mac/Linux:
-source venv/bin/activate
-```
+
 
 
 
