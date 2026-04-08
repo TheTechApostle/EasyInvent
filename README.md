@@ -66,6 +66,7 @@ This repository contains the Backend API built with **Django** and **Django REST
 ### Authentication
 > [!IMPORTANT]
 > The Admin login endpoint is required to obtain the JWT/Session token for protected routes.
+> django running at port `8000`
 
 | Method | Endpoint | Access | Description |
 | :--- | :--- | :---: | :--- |
