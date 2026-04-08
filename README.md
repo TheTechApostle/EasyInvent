@@ -55,10 +55,33 @@ backend/
 ```
 
 
+# 🚀 Project Name | API Gateway
+
+This repository contains the Backend API built with **Django** and **Django REST Framework (DRF)**, integrated with **Neon PostgreSQL**.
+
+---
+
+## 📡 API Reference
+
+### Authentication
+> [!IMPORTANT]
+> The Admin login endpoint is required to obtain the JWT/Session token for protected routes.
+
+| Method | Endpoint | Access | Description |
+| :--- | :--- | :---: | :--- |
+| `POST` | `/api/auth/login` | 🔓 Public | Admin login to receive access tokens. |
 
 
 
 
+---
 
+## 💻 Technical Integration
+
+### Request Header Example
+For protected endpoints (🔐), the frontend must include the token in the header:
+```http
+Authorization: Bearer <your_token_here>
+Content-Type: application/json
 
 
